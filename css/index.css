@@ -1,0 +1,689 @@
+@font-face {
+	font-family: 'Electrolize';
+	src: url(../fonts/Electrolize/Electrolize-Regular.ttf);
+}
+@font-face {
+	font-family: 'Oswald';
+	src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+	font-family: 'Poppins';
+	src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+header {
+	height: 100vh;
+	color: white;
+	background-image: url(../img/bg_hd.jpg);
+	background-position: top;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.log_title {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	padding: 15px 0px 0px 25px;
+	margin: 0;
+}
+.main_title {
+	font-family: 'Electrolize';
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 400;
+	margin: 0;
+	padding-left: 20px;
+}
+/* top menu*/
+
+.top_menu * {
+	margin: 0;
+	padding: 0;
+}
+.top_menu ul, .top_menu ol {
+	list-style: none;
+}
+.top_menu>ul {
+	display: flex;
+	padding: 20px 0px 0px 0px;
+}
+.top_menu>ul li {
+	position: relative;
+}
+/*.top_menu > ul li > a i.fa{ Иконки!!!Future my be
+ position: absolute;
+ top: 15px;
+ left: 12px;
+ font-size: 18px;
+}*/
+
+.top_menu>ul li a {
+	display: block;
+	padding: 0px 20px 0px 20px;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+	font-family: 'Oswald';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+}
+.top_menu li a:hover {
+	color: #e8441d;
+	transition: all 0.3s ease;
+	cursor: url(../cursors/sym57.cur), pointer;
+}
+/*sub menu*/
+
+.top_menu li ul {
+	position: absolute;
+	left: 20px;
+	padding-top: 10px;
+	min-width: 150px;
+	display: none;
+}
+.top_menu li>ul li {
+	border: 1px solid #c7c8ca;
+}
+.top_menu li>ul li a {
+	padding: 10px;
+	text-transform: none;
+	background: #ffffff;
+	color: black;
+}
+.top_menu li>ul li ul {
+	position: absolute;
+	left: 155px;
+	top: 0;
+}
+.top_menu li:hover>ul {
+	display: block;
+}
+.header_text {
+	width: 700px;
+	padding-left: 30px;
+}
+.slogan {
+	font-size: 60px;
+	text-transform: uppercase;
+}
+/*programm part*/
+.offers {
+	display: flex;
+	flex-flow: row nowrap;
+	height: 450px;
+}
+.suggestion_1, .suggestion_2, .suggestion_3 {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	flex-basis: 34%;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.suggestion_1 {
+	background-image: url(../img/group.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+}
+.suggestion_2 {
+	background-image: url(../img/personal.jpg);
+	background-position: top;
+	background-size: cover;
+	background-attachment: scroll;
+}
+.suggestion_3 {
+	background-image: url(../img/ladies.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+}
+.suggestion_title {
+	height: 25px;
+	margin-left: 60px;
+	font-size: 15px;
+	color: #d1b3a8;
+}
+.suggestion_main {
+	height: 30px;
+	margin-left: 60px;
+	margin-top: 20px;
+	color: #ffffff;
+}
+.suggestion_description_1, .suggestion_description_2, .suggestion_description_3 {
+	height: 200px;
+	width: 170px;
+	margin-left: 60px;
+	font-size: 15px;
+	margin-top: 20px;
+	color: #e8e8e8;
+	font-weight: 500;
+}
+.suggestion_description_1:after {
+	content: "Групповая тренировка стиле CrossFit. Это программа общей физической подготовки, которая позволит вам проверить на что выспособны и узнать уровень вашей общей физической подготовки. Груповые занятия научать вас работать в команде.";
+}
+.suggestion_description_2:after {
+	content: "Индивидуальные занятия с опытным, тренером в удобное для Вас время. Индувидуальный подход, полученные зания, приводят к быстрому росту и прогрессу.";
+}
+.suggestion_description_3:after {
+	content: "Специальная тренировка по силовой и физической подготовке для девушек. Поможет сбросить лишний вес, подтянуть тело и выглядеть стройнее.";
+}
+/*video part*/
+.about_crossfit {
+	margin: 0;
+	padding: 0;
+	height: 80vh;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	background-image: url(../img/bg-section_2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+video {
+	outline: none;
+}
+.CrossFit_info {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	background: #D5D8C1;
+	padding: 0px 20px 0px 25px;
+	width: 500px;
+	height: 350px;
+	border: 3px solid black;
+	border-radius: 25px;
+}
+.CrossFit_info_title_1, .CrossFit_info_title_2, .CrossFit_info_dedcription_1, .CrossFit_info_dedcription_2 {
+	padding: 7px;
+}
+.CrossFit_info_title_1 {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	color: rgb(101, 102, 91);
+}
+.CrossFit_info_title_2 {
+	font-weight: 600;
+	font-style: normal;
+	font-family: 'Oswald', sans-serif;
+	color: rgb(28, 26, 27);
+}
+.CrossFit_info_dedcription_1 {
+	font-weight: 100;
+	font-style: normal;
+	font-family: Poppins, sans-serif;
+	color: rgb(28, 26, 27);
+}
+.CrossFit_info_dedcription_2 {
+	font-weight: 400;
+	font-style: normal;
+	font-family: Poppins, sans-serif;
+	color: rgb(101, 102, 91);
+}
+.CrossFit_info_dedcription_2:after {
+	content: ", состоящая в основном из аэробных упражнений, гимнастики (упражнения с весом собственного тела) и тяжёлой атлетики.Кроссфит – это круговая тренировка (то есть, упражнения постоянно повторяются, как бы замыкаясь в цепочку), которая заключается в выполнении определенного комплекса упражнений за минимальное время.";
+}
+/*advantages part*/
+.part_1 {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.part_2 {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.item {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 280px;
+	flex-basis: 34%;
+}
+.use_1 {
+	background-color: rgb(245, 245, 245);
+}
+.use_3 {
+	background-color: rgb(245, 245, 245);
+}
+.use_5 {
+	background-color: rgb(245, 245, 245);
+}
+.item_title {
+	margin-top: 20px;
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 0;
+}
+.item_dedcription_1, .item_dedcription_2, .item_dedcription_3, .item_dedcription_4, .item_dedcription_5, .item_dedcription_6 {
+	margin-top: 15px;
+	width: 290px;
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	color: rgb(101, 102, 91);
+}
+.item_dedcription_1:after {
+	content: "Функциональный тренинг — это принципиально новый этап развития фитнеса.";
+}
+.item_dedcription_2:after {
+	content: "Кардио тренировка - улучшите ваше здоровье, выносливость и сердечно-сосудистую систему.";
+}
+.item_dedcription_3:after {
+	content: "Это комплекс спортивных упражнений, направленный на укрепление скелетно-мышечной системы.";
+}
+.item_dedcription_4:after {
+	content: "Индивидуальные занятия с опытным тренером, дадут быстрый результат.";
+}
+.item_dedcription_5:after {
+	content: "Тренировки сделают ваше тело не только выносливым, но и красивым.";
+}
+.item_dedcription_1:after {
+	content: "Мы познакомим вас со всеми принципами спортивного питания.";
+}
+/*events part*/
+.future_events {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.events {
+	height: 100vh;
+	width: 50%;
+}
+.events_1, .events_2 {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 50%;
+	margin-top: 40px;
+	border-right: 1px solid #c7c8ca;
+	border-left: 1px solid #b2b3b5;
+	padding-left: 5px;
+}
+.run {
+	background-image: url(../img/run.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.einfo {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+.events_main {
+	padding-left: 60px;
+	display: flex;
+}
+.events_info_main_title {
+	padding-left: 60px;
+	display: flex;
+	flex-flow: column nowrap;
+}
+.events_info_top_title {
+	font-weight: 400;
+	font-style: normal;
+	font-family: Poppins, sans-serif;
+	color: rgb(101, 102, 91);
+	font-size: 15px;
+}
+.events_info_slogan {
+	margin-bottom: 30px;
+	font-weight: 400;
+	font-style: normal;
+	font-family: Poppins, sans-serif;
+	color: rgb(196, 196, 196);
+	font-size: 14px;
+}
+.events_info_title {
+	font-weight: 400;
+	font-style: normal;
+	font-family: Oswald, sans-serif;
+	color: rgb(28, 26, 27);
+	font-size: 40px;
+}
+.events_info_date {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Oswald', sans-serif;
+	color: #e8441d;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+.events_info_title_2 {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	color: #ababab;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.events_info_description_1, .events_info_description_2 {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	color: #1c1a1b;
+	font-size: 16px;
+}
+.events_info_description_1:after {
+	content: "Двухдневный турнир. Покажет кто достоин. Отбор начнется в апреле после Открытого турнира. Спортсмены соревнуются за выход в финал который состоиться в июне.";
+}
+.events_info_description_2:after {
+	content: "Парные соревнования среди девушек - это отличное соревнование для тех, кто хочет испытать себя в командной игре. Найдти себе партнера и зарегистрируйтесь уже сейчас.";
+}
+/*raffle part*/
+.timer {
+	height: 40vw;
+	background-image: url(../img/bg_timer.jpg);
+	background-position: top;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	font-size: 68px;
+	color: white;
+}
+.raffle_title {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	color: #ababab;
+}
+.raffle_title:after {
+	content: "До начала розыгрыша осталось !!!";
+}
+/*training part*/
+.training_plan {
+	height: 90vh;
+	background-image: url(../img/plan.jpg);
+	background-position: top;
+	background-size: cover;
+	padding-top: 80px;
+}
+.plan_title, .plan_select {
+	display: block;
+	text-align: center;
+}
+.plan_title {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	color: #c4c4c4;
+}
+.plan_select {
+	font-size: 25px;
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Oswald', sans-serif;
+	color: #1c1a1b;
+}
+.plans {
+	display: flex;
+	flex-flow: column nowrap;
+	height: 400px;
+}
+.plan_hd {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+.plans_window {
+	background-color: #434f53;
+	width: 350px;
+	height: 150px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+.plans_info {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-end;
+}
+.plans_window_description {
+	color: white;
+	font-size: 23px;
+	font-weight: 500;
+	font-style: normal;
+	font-family: 'Oswald', sans-serif;
+}
+.plans_description {
+	padding-bottom: 15px;
+	width: 300px;
+	font-size: 17px;
+	font-weight: 500;
+	font-style: normal;
+	font-family: 'Oswald', sans-serif;
+	color: black;
+}
+/*testimonial part*/
+.testimonials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+	background-image: url(../img/bfg_testimonials.jpg);
+	background-position: top;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.testimonials_say, .testimonials_title, .testimonials_description, .testimonials_name {
+	display: block;
+	color: white;
+	text-align: center;
+}
+.testimonials_say {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	color: #c4c4c4;
+	font-size: 14px;
+}
+.testimonials_title {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Oswald', sans-serif;
+	color: #ffffff;
+	font-size: 40px;
+	padding-top: 30px;
+}
+.testimonials_description {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	color: #ffffff;
+	font-size: 18px;
+	padding-top: 50px;
+	display: inline-block;
+	width: 600px;
+}
+.testimonials_name {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	color: #ababab;
+	font-size: 14px;
+	padding-top: 30px;
+}
+/*news part*/
+.latest_news {
+	height: 65vh;
+}
+.news_title {
+	display: block;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 25px;
+	font-size: 25px;
+}
+.news_img {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+.news {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	width: 250px;
+}
+.news_content {
+	color: #1c1a1b;
+	text-decoration: none;
+	font-weight: 500;
+	font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	font-size: 17px;
+	padding: 10px 0px 0px 0px;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: baseline;
+}
+.news_date {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	color: #ababab;
+	font-size: 15px;
+	padding: 5px 0px 0px 0px;
+}
+/*end part*/
+footer {
+	background-color: rgb(28, 26, 27);
+	height: 45vh;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: baseline;
+	padding-left: 30px;
+	padding-right: 60px;
+	padding-top: 10px;
+	position: relative;
+}
+.info_footer {
+	height: 200px;
+	width: 250px;
+}
+.info_footer_title {
+	display: flex;
+	flex-flow: row nowrap;
+	margin-bottom: 15px;
+	color: white;
+}
+.info_footer_title_CrossFit {
+	font-size: 25px;
+	padding-left: 15px;
+}
+.logo_fot {
+	height: 25px;
+	width: 50px;
+}
+.CrossFit_description_fotr {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	color: #ababab;
+	font-size: 14px;
+}
+.CrossFit_description_fotr:after {
+	content: "CrossFit - это наша жизнь и философия. Мы предлагаем индивидуальные тренировки, специальные спортивные программы для спортсменов, обучение / инструктаж по гиревому спорту, а также индивидуальные программы питания.";
+}
+.footer_nav ul {
+	list-style: none;
+	padding-left: 0;
+}
+.footer_nav ul li {
+	margin: 10px 0px 0px 0px;
+	color: #e8441d;
+}
+.footer_nav li::before {
+	content: "\203A";
+	margin-right: 15px;
+}
+.footer_nav li a:hover {
+	color: #e8441d;
+	transition: all 0.3s ease;
+}
+.footer_nav a {
+	text-decoration: none;
+	color: white;
+}
+.footer_menu_title {
+	color: #696969;
+}
+.programm_nav ul {
+	list-style: none;
+	padding-left: 0;
+}
+.programm_nav ul li {
+	color: #e8441d;
+}
+.programm_nav li::before {
+	content: "\203A";
+	margin-right: 15px;
+	list-style-position: outside;
+}
+.programm_nav li a:hover {
+	color: #e8441d;
+	transition: all 0.3s ease;
+}
+.programm_nav ul li {
+	margin: 10px;
+}
+.programm_nav a {
+	text-decoration: none;
+	color: white;
+	color: #ffffff;
+	font-weight: 400;
+	font-style: normal;
+}
+.Contact_address {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 150px;
+}
+.bottom_copyright {
+	height: 35px;
+	background-color: rgb(0, 0, 0);
+	display: block;
+	padding: 7px 0px 0px 20px;
+}
+.bottom_copyright_description {
+	color: #757575;
+	font-size: 13px;
+}
+.Contact_address {
+	padding-top: 12px;
+	color: white;
+}
+.Contact_address_title {
+	color: #696969;
+	font-size: 14px;
+}
+.Contact_address_info {
+	padding-top: 5px;
+	font-size: 13px;
+}
+.Contact_address_info a {
+	color: white;
+}

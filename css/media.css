@@ -1,0 +1,381 @@
+@media screen and (max-width: 1080px) {
+	header {
+		height: 90vh;
+	}
+	video {
+		height: 315px;
+		width: 460px
+	}
+	.CrossFit_info {
+		width: 400px;
+	}
+	.CrossFit_info_dedcription_2 {
+		font-size: 15px;
+	}
+	.timer {
+		font-size: 45px;
+	}
+	.plans_window {
+		width: 250px;
+		height: 120px
+	}
+	.plans_description {
+		font-size: 15px;
+		width: 250px;
+	}
+}
+@media screen and (max-width: 1040px) {
+	.latest_news {
+		height: 100vh;
+	}
+	.news_img {
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding: 15px;
+	}
+	.events {
+		height: 85vh;
+	}
+	.events_main, .events_main, .events_info_main_title {
+		padding-left: 30px;
+	}
+	.events_info_title_2, {
+		font-size: 13px;
+	}
+	.events_info_dedcription {
+		font-size: 14px;
+	}
+	.events_info_date {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 890px) {
+	video {
+		height: 315px;
+		width: 500px
+	}
+	.CrossFit_info {
+		height: 250px;
+		width: 700px;
+		align-items: center;
+		text-align: center;
+	}
+	.about_crossfit {
+		height: 100vh;
+		flex-flow: column nowrap;
+		justify-content: center;
+	}
+	.part_1, .part_2 {
+		justify-content: center;
+		flex-wrap: wrap;
+		flex-basis: 50%;
+	}
+}
+@media screen and (max-width: 855px) {
+	header {
+		height: 50vh;
+	}
+	.main_title {
+		font-size: 20px;
+	}
+	.top_menu>ul li a {
+		font-size: 14px;
+	}
+	.slogan {
+		font-size: 35px;
+	}
+	.header_text {
+		width: 450px;
+	}
+	.logo {
+		width: 45px;
+		height: 25px;
+	}
+	.offers {
+		height: 350px;
+	}
+	.CrossFit_description_fotr {
+		font-size: 12px;
+	}
+	.info_footer {
+		height: 300px;
+		width: 200px;
+	}
+	.footer_nav a {
+		font-size: 12px;
+	}
+	.programm_nav a {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 768px) {
+	header {
+		height: 40vh;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.header_text {
+		padding-left: 15px;
+	}
+	.slogan {
+		font-size: 25px;
+	}
+	.top_menu>ul {
+		flex-direction: column;
+	}
+	.top_menu li ul {
+		position: absolute;
+		left: 55px;
+		top: -10px;
+		min-width: 120px;
+		z-index: 1;
+	}
+	.top_menu li>ul li ul {
+		left: 120px;
+		top: 0;
+	}
+	.top_menu li>ul li a {
+		font-size: 12px;
+		padding: 5px 0px 5px 5px;
+	}
+	video {
+		height: 325px;
+		width: 400px
+	}
+	.offers {
+		height: 600px;
+		flex-direction: column;
+		padding: 0;
+	}
+	.suggestion_1, .suggestion_2, .suggestion_3 {
+		height: 300px;
+		flex-basis: 100%;
+		align-items: center;
+		text-align: center;
+		background-position: left;
+		padding-top: 15px;
+	}
+	.suggestion_1, .suggestion_3 {
+		background-position: top;
+	}
+	.suggestion_description_1, .suggestion_description_2, .suggestion_description_3 {
+		height: 100px;
+		width: 500px;
+	}
+	.about_crossfit {
+		height: 90vh;
+		text-align: center;
+	}
+	.run {
+		display: none;
+	}
+	.events {
+		width: 100%;
+	}
+	.capabilities {
+		display: flex;
+	}
+	.raffle_title {
+		font-size: 30px;
+	}
+	.CrossFit_info_dedcription_2:after {
+		content: "";
+	}
+	.CrossFit_info {
+		height: 150px;
+		width: 500px;
+		justify-content: center;
+	}
+	.CrossFit_info_title_1 {
+		display: none;
+	}
+	.about_crossfit {
+		height: 75vh;
+	}
+	.training_plan {
+		display: flex;
+		flex-flow: column wrap;
+		height: 45vh;
+		padding-top: 10px;
+	}
+	.plans_info {
+		display: none;
+	}
+	.plan_hd {
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+	.plans {
+		height: 70px;
+		padding-bottom: 5px;
+	}
+	.plans_window {
+		height: 70px;
+		width: 120px;
+	}
+	.palns_hd {
+		height: 300px;
+	}
+	.future_events, .events {
+		height: 60vh;
+	}
+	.programm {
+		display: none;
+	}
+}
+@media screen and (max-width: 640px) {
+	.item_dedcription_1:after {
+		content: "";
+	}
+	.item_dedcription_2:after {
+		content: "";
+	}
+	.item_dedcription_3:after {
+		content: "";
+	}
+	.item_dedcription_4:after {
+		content: "";
+	}
+	.item_dedcription_5:after {
+		content: "";
+	}
+	.item_dedcription_6:after {
+		content: "";
+	}
+	.offers {
+		height: 100px;
+		flex-direction: row;
+	}
+	.suggestion_1, .suggestion_2, .suggestion_3 {
+		height: 100px;
+		flex-basis: 34%;
+		padding: 0;
+		text-align: center;
+	}
+	.suggestion_description_1, .suggestion_description_2, .suggestion_description_3 {
+		display: none;
+	}
+	.suggestion_title, .suggestion_main, .suggestion_description_1, .suggestion_description_2, .suggestion_description_3 {
+		margin: 0;
+	}
+	.CrossFit_info {
+		display: none;
+	}
+	.about_crossfit {
+		height: 50vh;
+		padding: 0;
+		margin: 0;
+	}
+	.events_info_description_1, .events_info_description_2 {
+		display: none;
+	}
+	.future_events, .events {
+		height: 40vh;
+	}
+	.item {
+		height: 200px;
+		width: 200px;
+	}
+	.plans_window {
+		height: 90px;
+	}
+	.testimonials {
+		display: none;
+	}
+}
+@media screen and (max-width: 530px) {
+	.news_img {
+		flex-direction: column;
+		align-items: center;
+	}
+	.latest_news {
+		height: 170vh;
+	}
+	.news {
+		padding-bottom: 7px;
+	}
+	.footer_menu {
+		display: none;
+	}
+}
+@media screen and (max-width: 480px) {
+	.about_crossfit {
+		display: none;
+	}
+	.raffle_title:after {
+		content: "Осталось:"
+	}
+	.slogan {
+		display: none;
+	}
+	.suggestion_title {
+		font-size: 13px;
+	}
+	.suggestion_main {
+		font-size: 14px;
+	}
+	.CrossFit_description_fotr {
+		display: none;
+	}
+	.info_footer {
+		height: 50px;
+		width: 160px;
+	}
+	footer {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.item {
+		height: 150px;
+	}
+	.events_info_title {
+		font-size: 20px;
+	}
+	.item {
+		width: 150px;
+	}
+	.top_menu>ul {
+		flex-direction: column;
+	}
+	.top_menu li ul {
+		min-width: 115px;
+	}
+	.top_menu li>ul li ul {
+		left: 115px;
+	}
+	.top_menu li>ul li a {
+		font-size: 12px;
+		padding: 3px 0px 5px 3px;
+	}
+}
+@media screen and (max-width: 380px) {
+	.suggestion_title {
+		font-size: 12px;
+	}
+	.suggestion_main {
+		font-size: 13px;
+	}
+	.item {
+		font-size: 13px;
+	}
+	.item_img {
+		width: 50px;
+		height: 55px;
+	}
+	.last_img {
+		height: 100px;
+		width: 150px;
+	}
+	.news {
+		align-items: center;
+	}
+	.news_content {
+		text-align: center;
+	}
+	.events_info_main_title, .events_main {
+		padding: 10px
+	}
+	.latest_news {
+		height: 140vh;
+	}
+}
